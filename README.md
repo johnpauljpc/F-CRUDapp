@@ -5,5 +5,5 @@ This is a Student record application with CRUD functionalities implemented using
 git clone https://github.com/johnpauljpc/F-CRUDapp.git
 cd F-CRUDapp
 <li> manage.py makemigration </li>
-manage.py migrate
-manage.py runserver
+<li>manage.py migrate</li>
+<li>manage.py runserver</li>
