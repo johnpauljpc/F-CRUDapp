@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CRUDapp</title>
+</head>
+<body>
+	<div>
+		{% for msg in messages %}
+		<div style="color:darkgoldenrod; background:whitesmoke;"><em><h3>{{msg}}</h3></em></div>
+		{% endfor %}
+
+		{% block content %}
+		{% endblock %}
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h4>Are You sure You want to delete record for {{students.reg_no}}</h4>
+
+<form method="POST">
+{% csrf_token %}
+{{form.as_p}}
+<button style="color:red">Yeah, Delete!</button> 
+</form>
+<small>Not sure ?</small><a style="color: orange" href="/">Go back</a>
+{% endblock %}

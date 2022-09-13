@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h4>List of students</h4>
+
+{% for st in students %}
+<b>{{st.name}} {{st.reg_no}}</b>
+<p>{{st.about}}</p>
+
+<a style="color: orange; font-style: none" href="{% url 'detail' st.reg_no %}">More details </a>
+<a style="color: springgreen; font-style: none" href="{% url 'update' st.reg_no %}">Update Record</a>
+<a style="color: orangered; font-style: none" href="{% url 'delete' st.reg_no %}">-Delete record</a>
+<hr>
+
+{% endfor %}
+<b><a style="color: darkcyan ; margin-right: auto;" href="{% url 'create' %}">+Create new record </a></b>
+{% endblock %}
